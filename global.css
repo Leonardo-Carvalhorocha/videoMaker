@@ -4,6 +4,7 @@
 @import url("./styles/menuMobile.css");
 @import url("./styles/sobre-mim.css");
 @import url("./styles/footer.css");
+@import url("./styles/cardClientes.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -60,6 +61,12 @@ html {
   -webkit-background-clip: text;
   color: transparent;
   animation: shine 3s linear infinite;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 48px !important;
 }
 
 @keyframes shine {
@@ -77,4 +84,10 @@ html {
 
 a {
   color: var(--color-white);
+}
+
+@media (max-width: 650px) {
+  .efeito-text {
+    font-size: 32px !important;
+  }
 }
