@@ -1,0 +1,106 @@
+.experiencia-container {
+  margin-top: 80px;
+}
+
+.experiencia {
+  display: grid;
+  justify-content: center;
+}
+
+.experiencia h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 48px !important;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 40px;
+  background: linear-gradient(to bottom, var(--primary-color) 50%, var( --color-black) 0%);
+  border-radius: 6px;
+}
+
+.card {
+  background: linear-gradient(to bottom, var(--primary-color) 30%, var(--secondary-color) 0%);
+  gap: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  width: 200px;
+  transition: .3s ease-in-out;
+}
+
+.card img {
+  margin: 20px auto;
+  display: flex;
+}
+
+.card p {
+  color: var(--color-white);
+  font-size: 20px;
+  font-family: var(--font-family);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card span {
+  display: flex;
+  justify-content: center;
+  color: var(--color-detalhe);
+}
+
+.card:hover {
+  transform: scale(110%);
+}
+
+.linha {
+  max-width: 1400px;
+  margin: 60px auto 120px auto;
+}
+
+.ponto {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--color-detalhe);
+}
+
+.ponto-container {
+  display: flex;
+  background: var(--color-white);
+  height: 2px;
+  background-color: var;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ano-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.ano-container div p {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--tertiary);
+}
+
+@media(max-width: 1300px) {
+  .card-content {
+    gap: 40px;
+  }
+}
+
+@media(max-width: 900px) {
+  .card-content {
+    background: none;
+  }
+} 

@@ -1,0 +1,75 @@
+@import url("styles/header.css");
+@import url("./styles/slide.css");
+@import url("./styles/cardExperiencia.css");
+@import url("./styles/menuMobile.css");
+@import url("./styles/sobre-mim.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --primary-color: #1C1C1C;
+  --secondary-color: #303030;
+  --tertiary: #0C7F98;
+  --color-detalhe: #A78409;
+  --color-btn: #0C7F98;
+  --color-btn2: #0A5464;
+
+  --font-size-title: 48px;
+  --font-size-paragrafo: 24px;
+  --font-family: 'Montserrat, sans-serif';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.btn {
+  background: linear-gradient(var(--color-btn), var(--color-btn2));
+  border-radius: 4px;
+  transition: .4s;
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: 24px;
+  font-family: var(--font-family);
+}
+
+.btn:hover {
+  transform: scale(110%);
+  color: var(--color-white) !important;
+}
+
+.efeito-text {
+  font-size: 2em;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ADD8E6, #87CEEB, #5F9EA0, #4682B4, #0D9BBA);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+      background-position: 200% 0;
+  }
+  100% {
+      background-position: -200% 0;
+  }
+}
+
+.flex {
+  display: flex;
+}
