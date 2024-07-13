@@ -75,7 +75,7 @@ footer h1 span {
   color: var(--color-white);
   font-family: var(--font-family);
   gap: 10px;
-  margin: 0 auto;
+  margin-top: 40px;
   display: grid;
   justify-content: center;
   columns: 1;
