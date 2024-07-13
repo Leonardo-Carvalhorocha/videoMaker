@@ -20,6 +20,7 @@
   justify-content: center;
   gap: 80px;
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 .flex-cards {
@@ -29,9 +30,6 @@
 
 .card-antes {
   border: 2px solid red;
-  /* height: 300px;
-  width: 200px; */
-  max-width: 100%;
 }
 
 .card-antes::before, .card-depois::before {
@@ -44,8 +42,6 @@
 
 .card-depois {
   border: 2px solid green;
-  height: 300px;
-  width: 200px;
 }
 
 .flex-cards::before {
@@ -56,4 +52,25 @@
   position: absolute;
   margin-left: 220px;
   margin-top: 140px;
+}
+
+@media (max-width: 510px) {
+  iframe {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .flex-cards{
+    gap: 10px;
+  }
+  .card-antes::before, .card-depois::before  {
+    max-width: 18px;
+    height: 18px;
+  }
+
+  .flex-cards::before {
+    display: none;
+  }
 }
